@@ -6,9 +6,16 @@
     <title>Beauty Lab - Services</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-2">
+<body class="page-2 grid-layout">
 
+    
     <header id="main-header">
+        <div class="logo">
+    <a href="index.html">
+        <img src="images/лого1.jpg" alt="Beauty Lab Logo" class="logo-img">
+    </a>
+</div>
+
         <nav>
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
@@ -19,99 +26,140 @@
         </nav>
     </header>
 
-    <div class="container">
-        <h1>Our Services & Pricing</h1>
-        <p style="text-align: center;">Explore our detailed pricing tables for Makeup, Hair Styling, and Nail Care services.</p>
+   
+    <aside class="sidebar">
+        <h3>Special Offers</h3>
+        <p>Book any 2 services and receive a complimentary beverage of your choice!</p>
+        <div class="info-box">
+            <h4>Quick Booking</h4>
+            <p>Need urgent appointment?</p>
+            <a href="contact.html" class="btn-primary" style="display:inline-block; padding: 8px 16px; font-size: 13px;">Book Now</a>
+        </div>
+    </aside>
 
-        <h2 style="margin-top: 40px;">Makeup</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Service Name</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Day Makeup</td>
-                    <td>9,000 KZT</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Evening Makeup</td>
-                    <td>15,000 KZT</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Bridal Makeup</td>
-                    <td>17,000 KZT</td>
-                </tr>
-            </tbody>
-        </table>
+    <main class="main-content">
+        <div class="container">
+            <h1>Our Services & Pricing</h1>
+            <p style="text-align: center;">Explore our detailed pricing tables for Makeup, Hair Styling, and Nail Care services.</p>
 
-        <h2 style="margin-top: 40px;">Hair Styling</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Service Name</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Styling / Blowout</td>
-                    <td>8,000 KZT</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Curls</td>
-                    <td>10,000 KZT</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Updo Bun</td>
-                    <td>7,000 KZT</td>
-                </tr>
-            </tbody>
-        </table>
+            <!-- Task 2: Featured Packages (Flexbox Cards) -->
+            <h2 style="margin-top: 30px;">Featured Packages</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="images/фулл.jpg" alt="Full Glam" class="card-img">
+                    <span class="badge">Best Value</span>
+                    <h2>Full Glam Package</h2>
+                    <p>Evening makeup combined with luxury curls and a complimentary drink.</p>
+                    <a href="contact.html" class="card-btn">Book Package</a>
+                </div>
+                <div class="card">
+                    <img src="images/экспресс.jpg" alt="Express Care" class="card-img">
+                    <span class="badge">Quick</span>
+                    <h2>Express Beauty</h2>
+                    <p>Day makeup plus quick styling for your busy workday look.</p>
+                    <a href="contact.html" class="card-btn">Book Package</a>
+                </div>
+                <div class="card">
+                    <img src="images/ногтикомбо.jpg" alt="Nail Care" class="card-img">
+                    <span class="badge">Popular</span>
+                    <h2>Nail Art Combo</h2>
+                    <p>Full manicure with custom French design and luxury hand care treatment.</p>
+                    <a href="contact.html" class="card-btn">Book Package</a>
+                </div>
+            </div>
 
-        <h2 style="margin-top: 40px;">Nail Care</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Service Name</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Length 1-2</td>
-                    <td>8,000 KZT</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Length 3-4</td>
-                    <td>10,000 KZT</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>French Add-on</td>
-                    <td>+1,000 KZT</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Design Add-on</td>
-                    <td>+1,000 KZT</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+
+            <h2 style="margin-top: 40px;">Makeup</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Service Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Day Makeup</td>
+                        <td>9,000 KZT</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Evening Makeup</td>
+                        <td>15,000 KZT</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Bridal Makeup</td>
+                        <td>17,000 KZT</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 style="margin-top: 40px;">Hair Styling</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Service Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Styling / Blowout</td>
+                        <td>8,000 KZT</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Curls</td>
+                        <td>10,000 KZT</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Updo Bun</td>
+                        <td>7,000 KZT</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 style="margin-top: 40px;">Nail Care</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Service Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Length 1-2</td>
+                        <td>8,000 KZT</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Length 3-4</td>
+                        <td>10,000 KZT</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>French Add-on</td>
+                        <td>+1,000 KZT</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Design Add-on</td>
+                        <td>+1,000 KZT</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
 
     <footer>
         <p>&copy; 2026 Beauty Lab. All rights reserved. | Authors: Yerkenaz Azat & Nazerke Bozgulan</p>

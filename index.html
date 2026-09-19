@@ -6,9 +6,15 @@
     <title>Beauty Lab - Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-1">
+<body class="page-1 grid-layout">
 
+    <!-- Task 1: Flexbox Navigation Header (Logo on left, Links on right) -->
     <header id="main-header">
+        <div class="logo">
+    <a href="index.html">
+        <img src="images/лого1.jpg" alt="Beauty Lab Logo" class="logo-img">
+    </a>
+</div>
         <nav>
             <ul class="nav-menu">
                 <li><a href="index.html" class="active">Home</a></li>
@@ -19,37 +25,53 @@
         </nav>
     </header>
 
-    <div class="container">
-        <section style="text-align: center; background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(5px); border-radius: 20px; padding: 40px; box-shadow: 0 8px 25px rgba(244, 194, 204, 0.2);">
-            <h1>Welcome to Beauty Lab</h1>
-            <p>Your ultimate destination for soft glam, professional care, and aesthetic treatments designed exclusively for you.</p>
-            <a href="contact.html" style="display: inline-block; margin-top: 15px; padding: 12px 30px; background-color: #d47a94; color: white; text-decoration: none; border-radius: 25px; font-weight: 500; box-shadow: 0 4px 15px rgba(212, 122, 148, 0.3);">Book Appointment</a>
-        </section>
-
-        <div class="card-grid">
-            <div class="card">
-                <span class="badge">Popular</span>
-                <h2>Hair Styling</h2>
-                <p>Luxurious hair care, trendy curls, updo buns, and nourishing treatments.</p>
-            </div>
-            <div class="card">
-                <span class="badge">Trending</span>
-                <h2>Nail Care</h2>
-                <p>Immaculate manicures with custom lengths, French tips, and detailed art.</p>
-            </div>
-            <div class="card">
-                <span class="badge">Essential</span>
-                <h2>Makeup</h2>
-                <p>Professional day, evening, and bridal looks crafted by expert artists to highlight your natural beauty.</p>
-            </div>
-        </div>
-
+    <!-- Task 3: Sidebar (Grid Area: sidebar) -->
+    <aside class="sidebar">
+        <h3>Working Hours</h3>
+        <p>Every day:<br><strong>10:00 AM – 8:00 PM</strong></p>
         <div class="info-box">
-            <h3>Working Hours & Location</h3>
-            <p>We are open every day from <strong>10:00 AM to 8:00 PM</strong>. Located at Mangilik El "Beauty Lab".</p>
+            <h4>Location</h4>
+            <p>Mangilik El Ave, "Beauty Lab" Studio</p>
         </div>
-    </div>
+    </aside>
 
+    <!-- Task 3: Main Content (Grid Area: main) -->
+    <main class="main-content">
+        <div class="container">
+            <section class="hero-section">
+                <h1>Welcome to Beauty Lab</h1>
+                <p>Your ultimate destination for soft glam, professional care, and aesthetic treatments designed exclusively for you.</p>
+                <a href="contact.html" class="btn-primary">Book Appointment</a>
+            </section>
+
+            <!-- Task 2: Flexbox Cards with Image, Title, Text, and Button -->
+            <div class="card-grid">
+                <div class="card">
+                    <img src="images/хэйрстайл.jpg" alt="Hair Styling" class="card-img">
+                    <span class="badge">Popular</span>
+                    <h2>Hair Styling</h2>
+                    <p>Luxurious hair care, trendy curls, updo buns, and nourishing treatments.</p>
+                    <a href="services.html" class="card-btn">Learn More</a>
+                </div>
+                <div class="card">
+                    <img src="images/ногти1.jpg" alt="Nail Care" class="card-img">
+                    <span class="badge">Trending</span>
+                    <h2>Nail Care</h2>
+                    <p>Immaculate manicures with custom lengths, French tips, and detailed art.</p>
+                    <a href="services.html" class="card-btn">Learn More</a>
+                </div>
+                <div class="card">
+                    <img src="images/макияж1.jpg" alt="Makeup" class="card-img">
+                    <span class="badge">Essential</span>
+                    <h2>Makeup</h2>
+                    <p>Professional day, evening, and bridal looks crafted by expert artists to highlight your natural beauty.</p>
+                    <a href="services.html" class="card-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Task 3: Footer (Grid Area: footer) -->
     <footer>
         <p>&copy; 2026 Beauty Lab. All rights reserved. | Authors: Yerkenaz Azat & Nazerke Bozgulan</p>
     </footer>
