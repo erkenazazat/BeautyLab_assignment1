@@ -1,60 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beauty Lab - About Us</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Lab - About Us</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-3">
+<body class="page-3 grid-layout">
 
-
-<header id="main-header">
-<nav>
-<ul class="nav-menu">
-<li><a href="index.html">Home</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="about.html" class="active">About Us</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
-
-
-<div class="container">
-<h1>About Our Team</h1>
-<p style="text-align: center;">Meet the creators behind Beauty Lab, dedicated to delivering a seamless web experience with gorgeous aesthetics.</p>
-
-
-<div class="card-grid">
-<div class="card" style="text-align: center;">
-<img src="images/ерке1.jpeg" alt="Yerkenaz Azat" class="profile-img">
-<h2>Yerkenaz Azat</h2>
-<p>Lead Frontend Developer</p>
-<ul style="list-style: none; padding: 0; color: #6b5b60; font-size: 14px;">
-<li>Hobby: Coding & Dancing</li>
-<li>Pages: home and services</li>
-</ul>
+    <!-- Task 1: Flexbox Navigation Header -->
+    <header id="main-header">
+        <div class="logo">
+    <a href="index.html">
+        <img src="images/лого1.jpg" alt="Beauty Lab Logo" class="logo-img">
+    </a>
 </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Task 3: Sidebar (Grid Area: sidebar) -->
+    <aside class="sidebar">
+        <h3>About Beauty Lab</h3>
+        <p>Dedicated to delivering a seamless web experience with gorgeous aesthetics.</p>
+        <div class="info-box">
+            <h4>Our Mission</h4>
+            <p>Creating confidence and elegance for every client through professional care.</p>
+        </div>
+    </aside>
 
-<div class="card" style="text-align: center;">
-<img src="images/наз1.jpeg" alt="Nazerke Bozgulan" class="profile-img">
-<h2>Nazerke Bozgulan</h2>
-<p>UI/UX & Content Manager</p>
-<ul style="list-style: none; padding: 0; color: #6b5b60; font-size: 14px;">
-<li>Hobby: Design & Sketching</li>
-<li>Pages: about and contact</li>
-</ul>
-</div>
-</div>
-</div>
+    <!-- Task 3: Main Content (Grid Area: main) -->
+    <main class="main-content">
+        <div class="container">
+            <h1>About Our Team</h1>
+            <p style="text-align: center;">Meet the creators behind Beauty Lab, dedicated to delivering a seamless web experience with gorgeous aesthetics.</p>
 
+            <!-- Task 2: Flexbox Team Cards -->
+            <div class="card-grid">
+                <div class="card" style="text-align: center;">
+                    <img src="images/ерке1.jpeg" alt="Yerkenaz Azat" class="profile-img">
+                    <h2>Yerkenaz Azat</h2>
+                    <p class="role">Lead Frontend Developer</p>
+                    <ul class="card-list">
+                        <li>Hobby: Coding & Dancing</li>
+                        <li>Pages: Home & Services</li>
+                    </ul>
+                    <a href="contact.html" class="card-btn">Contact Yerkenaz</a>
+                </div>
 
-<footer>
-<p>&copy; 2026 Beauty Lab. All rights reserved. | Authors: Yerkenaz Azat & Nazerke Bozgulan]</p>
-</footer>
+                <div class="card" style="text-align: center;">
+                    <img src="images/наз1.jpeg" alt="Nazerke Bozgulan" class="profile-img">
+                    <h2>Nazerke Bozgulan</h2>
+                    <p class="role">UI/UX & Content Manager</p>
+                    <ul class="card-list">
+                        <li>Hobby: Design & Sketching</li>
+                        <li>Pages: About Us & Contact</li>
+                    </ul>
+                    <a href="contact.html" class="card-btn">Contact Nazerke</a>
+                </div>
+            </div>
 
+            <!-- Task 4: CSS Grid Image Gallery (9 Images with Hover Overlay) -->
+            <h2 style="margin-top: 50px; text-align: center;">Our Aesthetic Atmosphere</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/интерьер.jpg" alt="Interior">
+                    <div class="overlay"><span>Cozy Interior</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/макияж.jpg" alt="Makeup Corner">
+                    <div class="overlay"><span>Makeup Corner</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/хэйр.jpg" alt="Hair Station">
+                    <div class="overlay"><span>Hair Station</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ногти.jpg" alt="Nail Studio">
+                    <div class="overlay"><span>Nail Studio</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/уход.jpg" alt="Skincare Zone">
+                    <div class="overlay"><span>Skincare Zone</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/релакс.jpg" alt="Relax Lounge">
+                    <div class="overlay"><span>Relax Lounge</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/косметика.jpg" alt="Cosmetics">
+                    <div class="overlay"><span>Premium Products</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/бар.jpg" alt="Drink Bar">
+                    <div class="overlay"><span>Complimentary Drinks</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/детали.jpg" alt="Details">
+                    <div class="overlay"><span>Aesthetic Details</span></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Task 3: Footer (Grid Area: footer) -->
+    <footer>
+        <p>&copy; 2026 Beauty Lab. All rights reserved. | Authors: Yerkenaz Azat & Nazerke Bozgulan</p>
+    </footer>
 
 </body>
 </html>
